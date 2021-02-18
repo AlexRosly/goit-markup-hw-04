@@ -136,10 +136,15 @@ img {
 /* main */
 /* hero */
 .hero {
-  background-color: #2f303a;
+  /* background-color: #2f303a; */
   text-align: center;
+  max-width: 1600px;
   min-height: 600px;
   padding-top: 200px;
+  background-image: url(../images/fonhero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -203,7 +208,20 @@ img {
   min-width: 270px;
 }
 
+.specialites::before {
+  display: block;
+  content: '';
+  width: 270px;
+  height: 120px;
+  background-size: contain;
+  background-image: url(../images/SVG/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
 .specialites-title {
+  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--primary-text-color);
   font-weight: 700;
@@ -292,6 +310,29 @@ img {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+}
+
+.social {
+  display: inline-flex;
+}
+
+/* regular customers */
+
+.company-hd {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.company {
+  display: flex;
+  padding-bottom: 94px;
+  justify-content: space-between;
 }
 
 /* footer */
@@ -394,6 +435,12 @@ address .contac-info {
   margin-right: 30px;
   margin-bottom: 30px;
   width: calc((100% - 60px) / 3);
+  /* background: var(--second-text-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box; */
+}
+
+.exposition {
   background: var(--second-text-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
